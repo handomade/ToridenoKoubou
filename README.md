@@ -29,7 +29,17 @@ Wind has a significant impact, and its direction changes randomly with each atta
 The first to score 3 points (destroying the opponent's fortress 3 times) wins.
 
 ## 更新履歴 / History
+### 2025/8/31 ... ver1.1
+- 画面上部にあった情報類を画面下部に移動した。
+- その影響で描画の一部、当たり判定等の修正を行った。
+- 星空を追加した。
+- 効果音の追加、変更を行った。
 
+- Moved information elements from the top of the screen to the bottom.
+- Made adjustments to rendering and collision detection due to this change.
+- Added a starry sky.
+- Added and modified sound effects.
+  
 ### 2025/8/30 ... ver1.0
 - 弾丸が点ではなく線で描画されるようになり、速度があっても地形や砦を貫通することがなくなりました。  
 - 砦の位置がランダムで多少変わるようになりました。  
