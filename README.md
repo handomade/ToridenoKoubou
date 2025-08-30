@@ -21,9 +21,18 @@ SymbOS版　　2025 反動のゲームちゃんねる　反動
 BLUEが1PLAYER、PINKはコンピュータもしくは２PLAYERです。
 角度と速度を入力してFIRE!ボタンで攻撃します。
 両方とも敵側が0度、真上が90度です。
-風の影響はかなり大きいです。攻撃するたびに風向きはランダムで変わります。
+攻撃するたびに風向きはランダムで変わります。
 
 3ポイント（3回砦を破壊）先取した方の勝利です。
+
+****************履歴
+2025/8/30   .....ver1.0
+		弾丸が点ではなく線で描画されるようになり、速度があっても地形や砦を貫通することがなくなりました。
+　		砦の位置がランダムで多少変わるようになりました。
+		ランダムで壁が生成される事があるようになりました。
+		敵のAIがランダムで撃つだけではなくなりました。（でも馬鹿ですけど）
+		砦が大きくなりました。
+2025/8/29   .....ver0.1
 
 
 **Fortress Battle**
@@ -43,8 +52,15 @@ Wind has a significant impact, and its direction changes randomly with each atta
 
 The first to score 3 points (destroying the opponent's fortress 3 times) wins.
 
+**History**  
+2025/8/30 ... ver1.0  
+- Bullets are now drawn as lines instead of dots, and they no longer pass through terrain or forts regardless of speed.  
+- The position of forts now varies slightly at random.  
+- Walls may now be randomly generated.  
+- Enemy AI no longer just shoots randomly (though it's still pretty dumb).  
+- The fort has become larger.
+
+2025/8/29 ... ver0.1
 
 
 
-****************履歴
-2025/8/29   .....ver0.1
