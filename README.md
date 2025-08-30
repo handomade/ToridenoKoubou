@@ -1,66 +1,51 @@
-﻿*** Toride no Koubou ***
- 　　　砦の攻防
+# Toride no Koubou (Fortress Battle)
 
-SymbOS版　　2025 反動のゲームちゃんねる　反動
-オリジナル　1989 大高　準一郎
+**砦の攻防** (*Toride no Koubou*, Fortress Battle) は、*マイコンBASICマガジン* で多数のハードに移植されたストラテジック・シミュレーション・ゲームです。  
+オリジナルは大高 準一郎氏によるPC-8801シリーズ向けで、1989年5月号に掲載されました。  
+各ハードに移植されたものは、大幅なアレンジが施されたものもありました。  
+本SymbOS版はPC-8801版を参考に、ゲームバランスの調整や一人プレイモードの追加など、アレンジを加えて移植したものです。
 
-************************
+*Fortress Battle* is a strategic simulation game ported to numerous platforms in *Microcomputer BASIC Magazine*.  
+The original version was developed by Junichiro Ohtaka for the PC-8801 series and published in the May 1989 issue.  
+Some ports featured significant modifications.  
+This SymbOS version is primarily based on the PC-8801 version, with adjustments to game balance and the addition of a single-player mode.
 
-砦の攻防（とりでの攻防）はマイコンBASICマガジンで多数のハードに移植された
-ストラテジック・シミュレーション・ゲームです。
-オリジナルは大高 準一郎氏によるPC-8801シリーズで、1989年5月号に掲載されました。
-各ハードに移植されたものは大幅なアレンジがされているものもありました。
-今回私が移植したSymbOS版も基本的にはPC-8801版を参考にしたものを
-ゲームバランス調整や一人プレイモードの用意などのアレンジをしています。
+## 遊び方 / How to Play
 
-【遊び方】
-タイトル画面の時に画面下のmode欄に１を入力（デフォルトで入っています）
-してSTARTボタンでると一人プレイモードが、２を入力で二人で遊べます。
+タイトル画面で、画面下のmode欄に「1」を入力（デフォルト設定）してSTARTボタンを押すと一人プレイモード、「2」を入力すると二人プレイモードで遊べます。  
+ランダムに生成された地形と、BLUEの砦、PINKの砦が描画されます。  
+BLUEは1PLAYER、PINKはコンピュータまたは2PLAYERが操作します。  
+角度と速度を入力し、FIRE!ボタンで攻撃します。  
+両プレイヤーとも、敵側が0度、真上が90度です。  
+風向きは攻撃ごとにランダムで変化します。  
+3ポイント（相手の砦を3回破壊）を先に獲得した方が勝利です。
 
-ランダムによる地形、BLUEの砦、PINKの砦が描画されます。
-BLUEが1PLAYER、PINKはコンピュータもしくは２PLAYERです。
-角度と速度を入力してFIRE!ボタンで攻撃します。
-両方とも敵側が0度、真上が90度です。
-攻撃するたびに風向きはランダムで変わります。
-
-3ポイント（3回砦を破壊）先取した方の勝利です。
-
-****************履歴
-2025/8/30   .....ver1.0
-		弾丸が点ではなく線で描画されるようになり、速度があっても地形や砦を貫通することがなくなりました。
-　		砦の位置がランダムで多少変わるようになりました。
-		ランダムで壁が生成される事があるようになりました。
-		敵のAIがランダムで撃つだけではなくなりました。（でも馬鹿ですけど）
-		砦が大きくなりました。
-2025/8/29   .....ver0.1
-
-
-**Fortress Battle**
-
-*Fortress Battle* is a strategic simulation game that was ported to numerous platforms in *Microcomputer BASIC Magazine*. 
-The original version was developed by Junichiro Ohtaka for the PC-8801 series and published in the May 1989 issue. Some ports featured significant modifications.
-
-The SymbOS version I ported is primarily based on the PC-8801 version, with adjustments to game balance and the addition of a single-player mode.
-
-**How to Play**
-
-At the title screen, enter "1" in the mode field (default setting) and press the START button for single-player mode, or enter "2" for two-player mode.
-
-A randomly generated terrain with BLUE and PINK fortresses will be displayed. BLUE is controlled by Player 1, while PINK is controlled by the computer or Player 2. 
-Enter the angle and velocity, then press the FIRE! button to attack. Both sides use 0 degrees for directly facing the enemy and 90 degrees for straight up. 
-Wind has a significant impact, and its direction changes randomly with each attack.
-
+At the title screen, enter "1" in the mode field (default setting) and press the START button for single-player mode, or enter "2" for two-player mode.  
+A randomly generated terrain with BLUE and PINK fortresses will be displayed.  
+BLUE is controlled by Player 1, while PINK is controlled by the computer or Player 2.  
+Enter the angle and velocity, then press the FIRE! button to attack.  
+For both sides, 0 degrees is directly facing the enemy, and 90 degrees is straight up.  
+Wind has a significant impact, and its direction changes randomly with each attack.  
 The first to score 3 points (destroying the opponent's fortress 3 times) wins.
 
-**History**  
-2025/8/30 ... ver1.0  
+## 更新履歴 / History
+
+### 2025/8/30 ... ver1.0
+- 弾丸が点ではなく線で描画されるようになり、速度があっても地形や砦を貫通することがなくなりました。  
+- 砦の位置がランダムで多少変わるようになりました。  
+- ランダムで壁が生成されることがあります。  
+- 敵のAIがランダムで撃つだけではなくなりました（ただし、まだ賢くはありません）。  
+- 砦が大きくなりました。  
+
 - Bullets are now drawn as lines instead of dots, and they no longer pass through terrain or forts regardless of speed.  
 - The position of forts now varies slightly at random.  
 - Walls may now be randomly generated.  
 - Enemy AI no longer just shoots randomly (though it's still pretty dumb).  
 - The fort has become larger.
 
-2025/8/29 ... ver0.1
+### 2025/8/29 ... ver0.1
+- 初期リリース / Initial release.
 
-
-
+## クレジット / Credits
+- オリジナル / Original: 大高 準一郎 (Junichiro Ohtaka), 1989  
+- SymbOS版 / SymbOS Port: 反動のゲームちゃんねる (Hando), 2025
